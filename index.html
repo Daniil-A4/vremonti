@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/adaptive.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/swiper.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <!-- FAVICONS ICON -->
+  <link rel="shortcut icon" type="image/png" href="" />
+
+  <title>Document</title>
+  <script src="jquery.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+        <div class="header__body">
+          <div class="header__logo">
+            <a href="index.html" class="header__link">
+              <img src="./image/logo.webp" alt="logo" class="header__img">
+            </a>
+          </div>
+
+          <nav class="nav nav--topBar">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a data-goto=".page__section_1" href="#" class="nav__link">Про нас</a>
+              </li>
+              <li class="nav__item">
+                <a data-goto=".page__section_2" href="#" class="nav__link">Калькулятор</a>
+              </li>
+              <li class="nav__item">
+                <a data-goto=".page__section_3" href="#" class="nav__link">Чому ми?</a>
+              </li>
+              <li class="nav__item">
+                <a data-goto=".page__section_4" href="#" class="nav__link">Наші проекти</a>
+              </li>
+              <li class="nav__item">
+                <a data-goto=".page__section_5" href="#" class="nav__link">Контактна інформація</a>
+              </li>
+            </ul>
+          </nav>
+
+          <a class="number icon-phone" href="tel:+380978952980">+380978952980</a>
+
+          <div class="icon-menu">
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <aside class="menu page__menu" id="sideBar">
+      <nav class="nav nav--sideBar">
+        <ul class="nav__list nav--list-sideBar">
+          <li class="nav__item">
+            <a data-goto=".page__section_1" href="#" class="nav__link">Про нас</a>
+          </li>
+          <li class="nav__item">
+            <a data-goto=".page__section_2" href="#" class="nav__link">Чому ми?</a>
+          </li>
+          <li class="nav__item">
+            <a data-goto=".page__section_3" href="#" class="nav__link">Калькулятор</a>
+          </li>
+          <li class="nav__item">
+            <a data-goto=".page__section_4" href="#" class="nav__link">Наші проекти</a>
+          </li>
+          <li class="nav__item">
+            <a data-goto=".page__section_5" href="#" class="nav__link">Контактна інформація</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="tel:+380978952980">+380978952980</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="menu__close">Close</button>
+    </aside>
+
+    <main class="main">
+      <section class="hero">
+        <div class="hero__contacts">
+          <div class="call">
+            <div class="call-bg">
+              <a href="tel:+380978952980" class="call__number icon-phone"></a>
+            </div>
+          </div>
+
+          <ul class="hero__socials">
+            <li>
+              <a href="https://www.instagram.com/vremonti.ua?igsh=OGQ5ZDc2ODk2ZA==">
+                <i class="social-icon icon-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=61556107972383">
+                <i class="social-icon icon-facebook"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero__container _container">
+          <div class="hero__body">
+            <div class="hero__top">
+              <h1 class="hero__title">Ремонт точно в термін!<br> За <span>60</span> днів із гарантією <span>2</span> роки
+              </h1>
+              <a data-goto=".page__section_2" class="hero__btn btn-11" href="#">Розрахувати вартість</a>
+            </div>
+
+            <ul class="hero__privileges">
+              <li class="hero__privilege">Гарантія на всі роботи від 1 року</li>
+              <li class="hero__privilege">Доступні ціни та якісний ремонт</li>
+              <li class="hero__privilege">Фіксовані ціни та прозорий кошторис</li>
+              <li class="hero__privilege">Поетапна оплата</li>
+              <li class="hero__privilege">Закуповуємо чорнові матеріали безпосередньо у заводів</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="about page__section_1">
+        <div class="about__container _container">
+          <div class="about__body">
+            <h2 class="about__title"><span>Про</span> нас</h2>
+            <div class="about__info-wrapper">
+              <div class="about_number">1</div>
+              <p class="about__text">Ласкаво запрошуємо в світ професійного ремонту та перетворень - світ, де кожен
+                проект оживає від майстерності та знань. Ми - команда Vremonti.ua, яка пройшла через випробування часу
+                та наростила вражаючий досвід протягом восьми років своєї діяльності. За цей час ми зробили 956 об'єктів
+                неперевершеними, подарувавши їм нове життя та блиск, що вразить кожного.</p>
+            </div>
+
+            <div class="about__info-wrapper">
+              <div class="about_number">2</div>
+              <p class="about__text">Наша команда - це не лише спеціалісти, але й справжні магістралі таланту та
+                професіоналізму. Кожен учасник нашої команди - це окрема майстерня ідей та вмінь, завжди готова взяти на
+                себе відповідальність за будь-яке завдання. Від миттєвих косметичних оновлень до складних та великих
+                проектів ремонту заміських будинків - ми впевнені в нашій здатності впоратися з будь-яким викликом.</p>
+            </div>
+
+            <div class="about__info-wrapper">
+              <div class="about_number">3</div>
+              <p class="about__text">Ми не просто виконуємо свою роботу - ми створюємо шедеври, що запам'ятовуються та
+                вражають своєю вишуканістю. Кожен проект - це наша візитна картка, наша гордість та наша спадщина. Ми -
+                команда Vremonti.ua, і ми завжди тут, щоб зробити ваші мрії про ідеальне приміщення реальністю. Довірте
+                нам свої ідеї - і ми перетворимо їх у дива!"</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="quiz page__section_2">
+        <div class="quiz__container _container">
+          <div class="quiz__body">
+            <h3 class="quiz__title">Розрахуйте вартість вашого ремонту і закріпіть за собою подарунок на вибір</h3>
+
+            <div class="quiz__sqore">
+              <span class="quiz__correct-score"></span>
+              <span>/</span>
+              <span class="quiz__total-score">4</span>
+            </div>
+
+            <form action="javascript:" class="quiz__realty-form">
+              <fieldset class="quiz__slide">
+                <h4 class="quiz__form-question">Виберіть тип нерухомості</h4>
+                <ul class="quiz__form-list">
+                  <li class="quiz__form-item">
+                    <label>
+                      <div class="quiz__image">
+                        <img class="quiz__img" src="./image/quiz/01.jpeg" alt="image">
+                      </div>
+                      <input type="radio" name="object" hidden value="Квартира">
+                      <i class="quiz__radio"></i>
+                      <span class="quiz__form-answear">Квартира</span>
+                    </label>
+                  </li>
+
+                  <li class="quiz__form-item">
+                    <label>
+                      <div class="quiz__image">
+                        <img class="quiz__img" src="./image/quiz/02.jpeg" alt="image">
+                      </div>
+                      <input type="radio" name="object" hidden value="Вторинне житло">
+                      <i class="quiz__radio"></i>
+                      <span class="quiz__form-answear">Вторинне житло</span>
+                    </label>
+                  </li>
+
+                  <li class="quiz__form-item">
+                    <label>
+                      <div class="quiz__image">
+                        <img class="quiz__img" src="./image/quiz/03.webp" alt="image">
+                      </div>
+                      <input type="radio" name="object" hidden value="Будинок">
+                      <i class="quiz__radio"></i>
+                      <span class="quiz__form-answear">Будинок</span>
+                    </label>
+                  </li>
+
+                  <li class="quiz__form-item">
+                    <label>
+                      <div class="quiz__image">
+                        <img class="quiz__img" src="./image/quiz/04.jpg" alt="image">
+                      </div>
+                      <input type="radio" name="object" hidden value="Комерційний об'єкт">
+                      <i class="quiz__radio"></i>
+                      <span class="quiz__form-answear">Комерційний об'єкт</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </form>
+
+            <form hidden action="javascript:" class="quiz__area-form">
+              <fieldset class="quiz__slide">
+                <h4 class="quiz__form-question">Яка у вас площа?</h4>
+                <ul class="quiz__form-list">
+                  <li class="quiz__form-item">
+                    <label>
+                      <input type="radio" name="area" hidden value="менше 50м2">
+                      <i class="quiz__radio"></i>
+                      <span class="quiz__form-answear">менше 50м2</span>
+                    </label>
+                  </li>
+
+                  <li class="quiz__form-item">
+                    <label>
+                      <input type="radio" name="area" hidden value="від 50м2 до 100м2">
+                      <i class="quiz__radio"></i>
+                      <span class="quiz__form-answear">від 50м2 до 100м2</span>
+                    </label>
+                  </li>
+
+                  <li class="quiz__form-item">
+                    <label>
+                      <input type="radio" name="area" hidden value="від 100м2 до 200м2">
+                      <i class="quiz__radio"></i>
+                      <span class="quiz__form-answear">від 100м2 до 200м2</span>
+                    </label>
+                  </li>
+
+                  <li class="quiz__form-item">
+                    <label>
+                      <input type="radio" name="area" hidden value="від 200м2">
+                      <i class="quiz__radio"></i>
+                      <span class="quiz__form-answear">від 200м2</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </form>
+
+            <form hidden action="javascript:" class="quiz__design-form">
+              <fieldset class="quiz__slide">
+                <h4 class="quiz__form-question">Чи маєте Ви дизайн проект?</h4>
+                <ul class="quiz__form-list">
+                  <li class="quiz__form-item">
+                    <label>
+                      <input type="radio" name="haveProgect" hidden value="Так">
+                      <i class="quiz__radio"></i>
+                      <span class="quiz__form-answear">Так</span>
+                    </label>
+                  </li>
+
+                  <li class="quiz__form-item">
+                    <label>
+                      <input type="radio" name="haveProgect" hidden value="Ні">
+                      <i class="quiz__radio"></i>
+                      <span class="quiz__form-answear">Ні</span>
+                    </label>
+                  </li>
+
+                  <li class="quiz__form-item">
+                    <label>
+                      <input type="radio" name="haveProgect" hidden value="Хочу замовити">
+                      <i class="quiz__radio"></i>
+                      <span class="quiz__form-answear">Хочу замовити</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </form>
+
+            <form hidden action="javascript:" class="quiz__start">
+              <fieldset class="quiz__slide">
+                <h4 class="quiz__form-question">Коли потрібно розпочинати ремонтні роботи?</h4>
+                <ul class="quiz__form-list">
+                  <li class="quiz__form-item">
+                    <label>
+                      <input type="radio" name="whenStart" hidden value="Якомога швидше">
+                      <i class="quiz__radio"></i>
+                      <span class="quiz__form-answear">Якомога швидше</span>
+                    </label>
+                  </li>
+
+                  <li class="quiz__form-item">
+                    <label>
+                      <input type="radio" name="whenStart" hidden value="Напротязі місяця">
+                      <i class="quiz__radio"></i>
+                      <span class="quiz__form-answear">Напротязі місяця</span>
+                    </label>
+                  </li>
+
+                  <li class="quiz__form-item">
+                    <label>
+                      <input type="radio" name="whenStart" hidden value="Протягом 2ух тижнів">
+                      <i class="quiz__radio"></i>
+                      <span class="quiz__form-answear">Протягом 2ух тижнів</span>
+                    </label>
+                  </li>
+
+                  <li class="quiz__form-item">
+                    <label>
+                      <input type="radio" name="whenStart" hidden value="Не визначився">
+                      <i class="quiz__radio"></i>
+                      <span class="quiz__form-answear">Не визначився</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </form>
+
+            <div class="quiz__decor-line"></div>
+
+            <div class="quiz__buttons">
+              <button disabled class="quiz__prev">Назад</button>
+              <button disabled class="quiz__next">Далі</button>
+            </div>
+          </div>
+
+          <form hidden action="sendForm.php" class="quiz__send-form">
+            <div class="quiz__send-form-wrapper">
+              <p class="quiz__thank-you">Дякуємо за відповіді</p>
+              <h4 class="quiz__form-title">Залиште заявку і ми з вами зв'яжемось</h4>
+              <p>
+                <input class="quiz__name" type="text" name="name" placeholder="Ім'я" required
+                  pattern="^([a-zA-Z'\-]{1,50}|[а-яА-ЯёЁ'\-]{1,50}|[А-Яа-яёЁЇїІіЄєҐґ'\-]{1,50})$">
+              </p>
+              <p>
+                <input class="quiz__number" type="tel" name="number" placeholder="Ваш номер телефону*" required
+                  pattern="^(\+?\d{1,5} ?)?(\(\d{2,3}\)|\d{2,3})( |-)?\d{3}( |-)?\d{2}( |-)?\d{2}$">
+              </p>
+              <p>
+                <button class="quiz__button btn-decor" type="submit">Надіслати</button>
+              </p>
+            </div>
+          </form>
+      </section>
+
+      <section class="achievement">
+        <div class="achievement__container _container">
+          <div class="achievement__body">
+            <h2 class="achievement__title"><span>Наші</span> досягнення</h2>
+
+            <ul class="achievement__items">
+              <li class="achievement__item">
+                <div class="achievement__number">8</div>
+                <p class="achievement__desscr">років на ринку</p>
+              </li>
+
+              <li class="achievement__item">
+                <div class="achievement__number">956</div>
+                <p class="achievement__desscr">реалізованих проектів</p>
+              </li>
+
+              <li class="achievement__item">
+                <div class="achievement__number">62</div>
+                <p class="achievement__desscr">співробітника у штаті</p>
+              </li>
+
+              <li class="achievement__item">
+                <div class="achievement__number">60</div>
+                <p class="achievement__desscr">днів у середньому за такий термін реалізовуємо об'єкт</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="why-we page__section_3">
+        <div class="why-we__container _container">
+          <div class="why-we__body">
+            <h2 class="why-we__title"><span>Чому</span> ми?</h2>
+            <div class="why-we__info-wrapper">
+              <div class="why-we__item">
+                <span class="why-we__number">1</span>
+                <p class="why-we__text">Обираючи команду Vremonti.ua, ви обираєте більше, ніж просто ремонт - ви
+                  обираєте спокій та впевненість в якості та ефективності кожного кроку. Наші ціни - це не лише цифри,
+                  це зобов'язання забезпечити вам якісний ремонт без непотрібних витрат. Ми розуміємо, наскільки
+                  важливо
+                  ефективно використовувати бюджет, тому кожен проект для нас - це можливість продемонструвати нашу
+                  економічну підходу до справи.</p>
+              </div>
+
+              <div class="why-we__item">
+                <span class="why-we__number">2</span>
+                <p class="why-we__text">Наша команда - це не лише спеціалісти, але й справжні магістралі таланту та
+                  професіоналізму. Кожен учасник нашої команди - це окрема майстерня ідей та вмінь, завжди готова
+                  взяти
+                  на себе відповідальність за будь-яке завдання. Від миттєвих косметичних оновлень до складних та
+                  великих проектів ремонту заміських будинків - ми впевнені в нашій здатності впоратися з будь-яким
+                  викликом.</p>
+              </div>
+
+              <div class="why-we__item">
+                <span class="why-we__number">3</span>
+                <p class="why-we__text">Ми не просто виконуємо свою роботу - ми створюємо шедеври, що запам'ятовуються
+                  та вражають своєю вишуканістю. Кожен проект - це наша візитна картка, наша гордість та наша
+                  спадщина.
+                  Ми - команда Vremonti.ua, і ми завжди тут, щоб зробити ваші мрії про ідеальне приміщення реальністю.
+                  Довірте нам свої ідеї - і ми перетворимо їх у дива!"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="send-form">
+        <div class="send-form__bg">
+          <div class="send-form__container _container">
+            <div class="send-form__body">
+              <div class="send-form__card">
+                <h3 class="send-form__title"><span>Готові</span> обговорити з нами проєкт?</h3>
+                <p class="send-form__sub-title">Залишіть заявку і ми з вами зв'яжемось</p>
+                <form class="send-form__form" action="sendform.php">
+                  <p>
+                    <input class="send-form__name" type="text" name="name" placeholder="Ім'я" required
+                      pattern="^([a-zA-Z'\-]{1,50}|[а-яА-ЯёЁ'\-]{1,50}|[А-Яа-яёЁЇїІіЄєҐґ'\-]{1,50})$">
+                  </p>
+                  <p>
+                    <input class="send-form__number" type="tel" name="number" placeholder="Ваш номер телефону*" required
+                      pattern="^(\+?\d{1,5} ?)?(\(\d{2,3}\)|\d{2,3})( |-)?\d{3}( |-)?\d{2}( |-)?\d{2}$">
+                  </p>
+                  <p>
+                    <button type="submit" class="send-form__button btn-decor">Надіслати</button>
+                  </p>
+                </form>
+                <div class="send-form__contact">
+                  <p class="send-form__contact-text">Також Ви можете зв'язатись з нами за номером:</p>
+                  <a class="number icon-phone" href="tel:+380978952980">+380978952980</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery page__section_4">
+        <div class="gallery__body">
+          <div class="gallery__container _container">
+            <h2 class="gallery__title">Проeкти</h2>
+          </div>
+
+          <div class="gallery-swiper swiper-container">
+            <div class="slider__arrows">
+              <button type="button" class="slider__arrow slider-arrow_prev icon-arrow_left"></button>
+              <button type="button" class="slider__arrow slider-arrow_next icon-arrow_right"></button>
+            </div>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="gallery__project">
+                  <a class="gallery__image gallery__image-more-dark icon-arrow_right_icon-2" data-fancybox="project-1"
+                    href="./image/gallery/g1/01.webp">
+                    <img alt="" src="./image/gallery/g1/01.webp" style="display: block;">
+                    <div class="gallery__img-subtitle">
+                      <span class="gallery__img-date">09/2022</span>
+                      <h5 class="gallery__img-name">VR084</h5>
+                      <ul class="gallery__img-list">
+                        <li class="gallery__img-item">ЖК Лебединий</li>
+                        <li class="gallery__img-item">1-к 41 кв. м.</li>
+                        <li class="gallery__img-item">Ремонт з 0 під ключ 🔑</li>
+                        <li class="gallery__img-item">Виготовлення та встановлення меблів</li>
+                        <li class="gallery__img-item">Технічне оснащення</li>
+                        <li class="gallery__img-item">Термін - 90 днів</li>
+                      </ul>
+                      <p class="gallery__img-info">Стильний ремонт в нашому улюбленому мінімалізмі😍🏡Клієнт залишився
+                        дуже задоволеним, а для нас це найважливіше ☝🏻
+                      </p>
+                    </div>
+                  </a>
+                  <a data-fancybox="project-1" href="./image/gallery/g1/02.webp" class="gallery__image hide"><img
+                      src="./image/gallery/g1/02.webp">
+                  </a>
+                  <a data-fancybox="project-1" href="./image/gallery/g1/03.webp" class="gallery__image hide"><img
+                      src="./image/gallery/g1/03.webp">
+                  </a>
+                  <a data-fancybox="project-1" href="./image/gallery/g1/04.webp" class="gallery__image hide"><img
+                      src="./image/gallery/g1/04.webp">
+                  </a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="gallery__project">
+                  <a class="gallery__image gallery__image-more-dark icon-arrow_right_icon-2" data-fancybox="project-2"
+                    href="./image/gallery/g2/01.webp">
+                    <img alt="" src="./image/gallery/g2/01.webp" style="display: block;">
+                    <div class="gallery__img-subtitle">
+                      <span class="gallery__img-date">09/2022</span>
+                      <h5 class="gallery__img-name">VR476</h5>
+                      <ul class="gallery__img-list">
+                        <li class="gallery__img-item">ЖК Terracotta</li>
+                        <li class="gallery__img-item">2-к видова квартира 59 кв. м.
+                        </li>
+                        <li class="gallery__img-item">Ремонт було виконано з 0 під 🔑
+                        </li>
+                        <li class="gallery__img-item">Ремонтні роботи, виготовлення та встановлення меблів,технічне оснащення
+                        </li>
+                        <li class="gallery__img-item">Термін виконання- 90 днів
+                        </li>
+                        <li class="gallery__img-item">Без дизайн-проекту
+                        </li>
+                      </ul>
+                      <p class="gallery__img-info">
+                      </p>
+                    </div>
+                  </a>
+                  <a data-fancybox="project-2" href="./image/gallery/g2/02.webp" class="gallery__image hide"><img
+                      src="./image/gallery/g2/02.webp">
+                  </a>
+                  <a data-fancybox="project-2" href="./image/gallery/g2/03.webp" class="gallery__image hide"><img
+                      src="./image/gallery/g2/03.webp">
+                  </a>
+                  <a data-fancybox="project-2" href="./image/gallery/g2/04.webp" class="gallery__image hide"><img
+                      src="./image/gallery/g2/04.webp">
+                  </a>
+                  <a data-fancybox="project-2" href="./image/gallery/g2/05.webp" class="gallery__image hide"><img
+                      src="./image/gallery/g2/05.webp">
+                  </a>
+                  <a data-fancybox="project-2" href="./image/gallery/g2/06.webp" class="gallery__image hide"><img
+                      src="./image/gallery/g2/06.webp">
+                  </a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="gallery__project">
+                  <a class="gallery__image gallery__image-more-dark icon-arrow_right_icon-2" data-fancybox="project-4"
+                    href="./image/gallery/g4/01.webp">
+                    <img alt="" src="./image/gallery/g4/01.webp" style="display: block;">
+                    <div class="gallery__img-subtitle">
+                      <span class="gallery__img-date">09/2022</span>
+                      <h5 class="gallery__img-name">VR032</h5>
+                      <ul class="gallery__img-list">
+                        <li class="gallery__img-item">ЖК Лебединий</li>
+                        <li class="gallery__img-item">1-к 42 кв. м. 
+                        </li>
+                        <li class="gallery__img-item">Ремонт з 0 під ключ 🔑</li>
+                        <li class="gallery__img-item">Виготовлення та встановлення меблів 
+                        <li class="gallery__img-item">Технічне оснащення
+                        <li class="gallery__img-item">Термін - 90 днів
+                        </li>
+                      </ul>
+                      <p class="gallery__img-info">
+                      </p>
+                    </div>
+                  </a>
+                  <a data-fancybox="project-4" href="./image/gallery/g4/02.webp" class="gallery__image hide"><img
+                      src="./image/gallery/g4/02.webp">
+                  </a>
+                  <a data-fancybox="project-4" href="./image/gallery/g4/03.webp" class="gallery__image hide"><img
+                      src="./image/gallery/g4/03.webp">
+                  </a>
+                  <a data-fancybox="project-4" href="./image/gallery/g4/04.webp" class="gallery__image hide"><img
+                      src="./image/gallery/g4/04.webp">
+                  </a>
+                  <a data-fancybox="project-4" href="./image/gallery/g4/05.webp" class="gallery__image hide"><img
+                      src="./image/gallery/g4/05.webp">
+                  </a>
+                  <a data-fancybox="project-4" href="./image/gallery/g4/06.webp" class="gallery__image hide"><img
+                      src="./image/gallery/g4/06.webp">
+                  </a>
+                  <a data-fancybox="project-4" href="./image/gallery/g4/07.webp" class="gallery__image hide"><img
+                      src="./image/gallery/g4/07.webp">
+                  </a>
+                  <a data-fancybox="project-4" href="./image/gallery/g4/08.webp" class="gallery__image hide"><img
+                      src="./image/gallery/g4/08.webp">
+                  </a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="gallery__project">
+                  <a class="gallery__image gallery__image-more-dark icon-arrow_right_icon-2" data-fancybox="project-3"
+                    href="./image/gallery/g3/01.webp">
+                    <img alt="" src="./image/gallery/g3/01.webp" style="display: block;">
+                    <div class="gallery__img-subtitle">
+                      <span class="gallery__img-date">09/2022</span>
+                      <h5 class="gallery__img-name">VR741</h5>
+                      <ul class="gallery__img-list">
+                        <li class="gallery__img-item">Смарт квартира 31 м. кв.</li>
+                        <li class="gallery__img-item">Ремонт з 0 під 🔑
+                        </li>
+                        <li class="gallery__img-item">Термін виконання - 60 днів.
+                        </li>
+                      </ul>
+                      <p class="gallery__img-info">Було цікаво попрацювати з таким обʼєктом.
+                        Задача була зробити стильно, але «не за всі гроші світу».
+                        Враховуючи невелику квадратуру, облаштували максимально компактно та з комфортом для власників.
+                      </p>
+                    </div>
+                  </a>
+                  <a data-fancybox="project-3" href="./image/gallery/g3/02.webp" class="gallery__image hide"><img
+                      src="./image/gallery/g3/02.webp">
+                  </a>
+                  <a data-fancybox="project-3" href="./image/gallery/g3/03.webp" class="gallery__image hide"><img
+                      src="./image/gallery/g3/03.webp">
+                  </a>
+                  <a data-fancybox="project-3" href="./image/gallery/g3/04.webp" class="gallery__image hide"><img
+                      src="./image/gallery/g3/04.webp">
+                  </a>
+                  <a data-fancybox="project-3" href="./image/gallery/g3/05.webp" class="gallery__image hide"><img
+                      src="./image/gallery/g3/05.webp">
+                  </a>
+                  <a data-fancybox="project-3" href="./image/gallery/g3/06.webp" class="gallery__image hide"><img
+                      src="./image/gallery/g3/06.webp">
+                  </a>
+                  <a data-fancybox="project-3" href="./image/gallery/g3/07.webp" class="gallery__image hide"><img
+                      src="./image/gallery/g3/07.webp">
+                  </a>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="gallery__decor">
+          <img src="image/decor.png" alt="image">
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer page__section_5">
+      <div class="footer__container _container">
+
+        <div class="footer__body">
+          <div class="footer__columns">
+            <div class="footer__column">
+              <img class="footer__img" src="./image/logo.webp" alt="">
+              <ul class="footer__social-networks">
+                <li>
+                  <a href="https://www.instagram.com/vremonti.ua?igsh=OGQ5ZDc2ODk2ZA==">
+                    <i class="footer-social social-icon icon-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/profile.php?id=61556107972383">
+                    <i class="footer-social social-icon icon-facebook"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__column">
+              <p class="footer__form-sub-title">Залишіть заявку і ми з вами зв'яжемось</p>
+              <form class="footer__form" action="javascript:">
+                <p>
+                  <input class="footer__name" type="text" name="name" placeholder="Ім'я" required
+                    pattern="^([a-zA-Z'\-]{1,50}|[а-яА-ЯёЁ'\-]{1,50}|[А-Яа-яёЁЇїІіЄєҐґ'\-]{1,50})$">
+                </p>
+                <p>
+                  <input class="footer__number" type="tel" name="number" placeholder="Ваш номер телефону*" required
+                    pattern="^(\+?\d{1,5} ?)?(\(\d{2,3}\)|\d{2,3})( |-)?\d{3}( |-)?\d{2}( |-)?\d{2}$">
+                </p>
+                <p>
+                  <button class="footer__button btn-decor">Надіслати</button>
+                </p>
+              </form>
+            </div>
+
+            <div class="footer__column">
+              <p class="footer__contacts-title">Контакти</p>
+              <ul class="footer__contacts">
+                <li class="footer__item">
+                  <a href="tel:+380978952980" class="footer__number icon-phone">+38 (097) 895 29 80</a>
+                </li>
+                <li class="footer__item">
+                  <a href="mailto:Petrenko-alina@ukr.net" class="footer__mail icon-email">Petrenko-alina@ukr.net</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__info-bott">
+            <p class="cop">© 2024 <span>vremonti.</span> Всі права захищені.</p>
+            <a class="pol popup-link" href="#popup-footer">Політика конфеденсійності<a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,324 @@
+html,
+body {
+  font-family: 'Helvetica', sans-serif;
+  color: #3A3A3A;
+  font-size: 16px;
+  height: 100%;
+  /* overflow-x: hidden; */
+  display: flex;
+  flex-direction: column;
+}
+
+html._lock {
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+._container {
+  max-width: 1180px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+body {
+  --main-color: #4d6a66;
+  --red-color: #b53522;
+  --orange-color: #df7b37;
+  --bg-color: rgb(251, 248, 224);
+}
+
+.number {
+  color: white;
+  font-weight: 100;
+  letter-spacing: 1.3px;
+  font-size: 18px;
+  margin-left: 15px;
+}
+
+/* =====================FONT-FAMILY============================================================================== */
+
+@font-face {
+  font-family: 'Circe-Light';
+  src: url(../fonts/Circe/-Light.woff) format('woff'),
+    url(../fonts/Circe/-Light.woff2) format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+
+}
+
+@font-face {
+  font-family: 'Circe-Bold';
+  src: url(../fonts/Circe/-Bold.woff) format('woff'),
+    url(../fonts/Circe/-Bold.woff2) format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Circe-ExtraBold';
+  src: url(../fonts/Circe/-ExtraBold.woff) format('woff'),
+    url(../fonts/Circe/-ExtraBold.woff2) format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-Semibold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fonts/BebasNeueRegular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../fonts/HelveticaNeueCyr-Thin.woff2'),
+    url('../fonts/HelveticaNeueCyr-Thin.woff');
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../fonts/HelveticaNeueCyr-Roman.woff'),
+    url('../fonts/HelveticaNeueCyr-Roman.woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../fonts/HelveticaNeueCyr-Medium.woff'),
+    url('../fonts/HelveticaNeueCyr-Medium.woff2');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../fonts/HelveticaNeueCyr-Bold.woff'),
+    url('../fonts/HelveticaNeueCyr-Bold.woff2');
+  font-weight: 700;
+}
+
+
+/* =====================TITLE============================================================================== */
+h1 {
+  /* font-size: 40px; */
+  font-weight: 600;
+  font-size: calc(24px + 16 * (100vw / 1180));
+}
+
+h2 {
+  /* font-size: 36px; */
+  font-weight: 700;
+  font-size: calc(20px + 16 * (100vw / 1180));
+}
+
+@media (max-width: 767.98px) {
+  h1 {
+    font-size: calc(24px + (16 + 16 * 0.7) * ((100vw - 320px) / 1180));
+  }
+
+  h2 {
+    font-size: calc(20px + (16 + 16 * 0.7) * ((100vw - 320px) / 1180));
+  }
+}
+
+
+/* =====================POPUP============================================================================== */
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.733);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.6s ease 0s;
+}
+
+.popup.open {
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
+}
+
+.popup.open .popup__content {
+  opacity: 1;
+  transform: translate(0px, 0px);
+}
+
+.popup__body {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup__content {
+  padding: 30px 50px;
+  width: 620px;
+  background-color: #fff;
+  border-radius: 7px;
+  position: relative;
+  transition: all 0.6s ease 0s;
+  opacity: 0;
+  transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+  /* transform: translate3d(0px, 0px, 0px) scale(1); */
+}
+
+.close-popup {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  color: #000;
+  font-size: 22px;
+}
+
+.popap__title {
+  color: #A7ACAF;
+  margin-bottom: 30px;
+}
+
+.popup__name,
+.popup__number {
+  background-color: #E9EFF7;
+  border-radius: 10px;
+  border: none;
+  margin: 10px 0;
+  padding: 5px 10px;
+  width: 100%;
+  font-size: 18px;
+  border: 1px solid #E9EFF7;
+}
+
+.popup__button {
+  color: #E9EFF7;
+  background-color: black;
+  border-radius: 10px;
+  border: none;
+  margin: 10px 0;
+  padding: 5px 10px;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+@media(max-width: 800px) {
+  .popup__content {
+    width: 420px;
+    padding: 30px 20px;
+  }
+}
+
+@media(max-width: 479px) {
+  .popup__content {
+    width: 340px;
+    padding: 30px 20px;
+  }
+}
+
+@media(max-width: 340px) {
+  .popup__content {
+    width: 250px;
+    padding: 20px 15px;
+  }
+}
+
+/* =================BURGER==================================================================================================================== */
+
+@media (max-width: 1219px) {
+  .icon-menu {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 13px;
+    cursor: pointer;
+    z-index: 5;
+    margin-left: 32px;
+    background: none;
+  }
+
+  .icon-menu span,
+  .icon-menu::before,
+  .icon-menu::after {
+    transition: all 0.3s ease 0s;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    background-color: #fff;
+  }
+
+  .icon-menu::before,
+  .icon-menu::after {
+    content: "";
+  }
+
+  .icon-menu::before {
+    top: 0;
+  }
+
+  .icon-menu::after {
+    bottom: 0;
+  }
+
+  .icon-menu span {
+    top: 50%;
+    transform: scale(1) translate(0px, -50%);
+  }
+
+  .icon-menu._active span {
+    transform: scale(0) translate(0px, -50%);
+  }
+
+  .icon-menu._active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0px, -50%);
+  }
+
+  .icon-menu._active::after {
+    top: 50%;
+    transform: rotate(45deg) translate(0px, -50%);
+  }
+}
+
+@media (max-width: 400.98px) {
+  .icon-menu {
+    margin-left: 5px;
+  }
+}

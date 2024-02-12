@@ -1,0 +1,100 @@
+.why-we {
+  margin: 100px auto 0;
+  padding: 50px 0 100px;
+  position: relative;
+  /* overflow: hidden; */
+  background-color: white;
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.59), 0 25px 50px 0 rgba(0, 0, 0, 0.154);
+  transform: rotate(0deg);
+  width: 95%;
+  z-index: 43;
+}
+
+.why-we::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: -12;
+  transform: rotate(2deg);
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.59), 0 25px 50px 0 rgba(0, 0, 0, 0.154);
+}
+
+.why-we::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: -12;
+  transform: rotate(-2deg);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.498), 0 25px 50px 0 rgba(0, 0, 0, 0.128);
+}
+
+.why-we__body {
+  /* transform: rotate(-3deg); */
+}
+
+.why-we__title {
+  letter-spacing: 0.7px;
+  margin-bottom: 40px;
+  font-weight: 500;
+  color: var(--main-color);
+  position: relative;
+  z-index: 2;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+}
+
+.why-we__title span {
+  text-rendering: optimizeLegibility;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--main-color);
+}
+
+.why-we__info-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+.why-we__item {
+  text-align: justify;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.396), 0 25px 50px 0 rgba(0, 0, 0, 0.132);
+}
+
+.why-we__number {
+  font-size: 30px;
+  background-color: var(--bg-color);
+  width: 100%;
+  display: block;
+  padding: 5px 0 5px 20px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.28);
+  position: relative;
+  font-weight: 400;
+}
+
+.why-we__number::before {
+  content: "";
+  background-color: rgba(128, 128, 128, 0.28);
+  width: 1px;
+  height: 40px;
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  transform: rotate(22deg);
+}
+
+.why-we__text {
+  padding: 10px 20px;
+  color: var(--main-color);
+  letter-spacing: 1px;
+  line-height: 110%;
+  font-weight: 100;
+}
