@@ -6,6 +6,7 @@
 .header {
   font-family: "Helvetica", sans-serif;
   background-color: var(--main-color);
+  background: linear-gradient(to left, #4d6a66, 48%, #a659ea00 100%);
   position: relative;
   z-index: 10;
 }
@@ -14,7 +15,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
+  gap: 15px;
+  height: 80px;
   padding: 10px 0;
 }
 
@@ -53,9 +55,11 @@
   padding: 4px 5px;
 }
 
-.nav__item:hover {
-  background: transparent;
-  box-shadow: none;
+@media (any-hover: hover) {
+  .nav__item:hover {
+    background: transparent;
+    box-shadow: none;
+  }
 }
 
 .nav__item:before,
@@ -81,10 +85,12 @@
   bottom: 0;
 }
 
-.nav__item:hover:before,
-.nav__item:hover:after {
-  width: 100%;
-  transition: 800ms ease all;
+@media (any-hover: hover) {
+  .nav__item:hover:before,
+  .nav__item:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+  }
 }
 
 .icon-menu {

@@ -16,6 +16,8 @@ btnBurger.addEventListener('click', function () {
       document.body.style.overflow = 'auto';
       btnBurger.classList.remove('_active');
     });
+  } else {
+    document.body.style.overflow = 'auto';
   }
 
   navListSideBar.forEach(navItem => {

@@ -41,10 +41,6 @@
     flex: 0 1 33.33%;
   }
 
-  .hero__contacts {
-    background: transparent;
-  }
-
   .call-bg {
     margin-left: 5px;
   }
@@ -59,6 +55,12 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 5px;
+  }
+
+   /* =======footer============== */
+
+  .footer__social-networks {
+    gap: 15px;
   }
 
 }
@@ -157,9 +159,6 @@
 @media (max-width: 479px) {
 
   /* =======HEADER============== */
-  .header {
-    background-color: #4d6a668e;
-  }
 
   .header__body {
     height: 70px;
@@ -265,6 +264,12 @@
     gap: 7px;
     padding-bottom: 7px;
     border-bottom: 1px solid #e5e5e5;
+  }
+
+  /* =======footer============== */
+
+  .footer__social-networks {
+    gap: 30px;
   }
 
   .footer__info-bott {
