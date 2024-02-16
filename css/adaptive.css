@@ -25,17 +25,20 @@
 }
 
 @media (max-width: 991px) {
+
   /* =======HERO============== */
+  .hero__body {
+    grid-template-rows: 80% 10%;
+  }
 
   .hero__privileges {
+    display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    justify-content: center;
   }
 
   .hero__privilege {
-    flex: 0 1 25%;
-    height: 55px;
-
+    flex: 0 1 33.33%;
   }
 
   .hero__contacts {
@@ -63,6 +66,19 @@
 @media (max-width: 767px) {
   .page__menu {
     width: 100%;
+  }
+
+  /* =======HERO============== */
+
+  .hero__privileges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero__privilege {
+    flex: 0 1 100%;
+    padding: 13px 20px 13px 12px;
   }
 
   /* ======ABOUT================= */
@@ -174,20 +190,14 @@
 
   .hero__socials {
     padding: 0 5px;
-}
+  }
 
   .hero__title span {
     font-size: 26px;
   }
 
-  .hero__privileges {
-    justify-content: start;
-    gap: 0px;
-  }
-
   .hero__privilege {
-    flex: 0 1 100%;
-    height: 22px;
+    padding: 11px 20px 11px 12px;
   }
 
   /* ======QUIZ================= */
@@ -226,8 +236,12 @@
     padding: 80px 10px 0;
   }
 
+  .gallery__image img {
+    height: 600px;
+  }
+
   .gallery__img-subtitle {
-    grid-template-rows: 6% 30% 40% 20%;
+    grid-template-rows: 6% 30% 35% 0%;
     opacity: 1;
   }
 
@@ -277,13 +291,9 @@
     padding: 10px 0;
   }
 
-  .hero__privileges {
-    /* font-size: 14px; */
-  }
-
   .hero__privilege {
-    height: 25px;
-    margin: 5px 0 5px 8px;
+    font-size: 12px;
+    padding: 8px 20px 8px 12px;
   }
 
   /* ======QUIZ================= */
@@ -313,6 +323,20 @@
   .send-form__card {
     flex: 0 1 100%;
   }
+
+  /* =======gallery============== */
+  .gallery {
+    padding: 40px 10px 0;
+  }
+
+  .gallery__img-list {
+    font-size: 14px;
+  }
+
+  .gallery__img-info {
+    font-size: 14px;
+    line-height: 110%;
+  }
 }
 
 @media (min-aspect-ratio: 4/2) and (max-width: 1400px),
@@ -340,11 +364,11 @@
 
   .hero__privileges {
     flex-wrap: nowrap;
-    gap: 10px;
   }
 
   .hero__privilege {
-    height: 65px;
+    font-size: 12px;
+    padding: 10px 20px 10px 12px;
   }
 
   .hero__contacts {

@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/icons.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/adaptive.css">
@@ -13,10 +14,12 @@
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/swiper.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
   <!-- FAVICONS ICON -->
   <link rel="shortcut icon" type="image/png" href="" />
 
   <title>Document</title>
+  <script src="gsap.min.js"></script>
   <script src="jquery.min.js"></script>
   <script defer src="script.js"></script>
 </head>
@@ -35,10 +38,10 @@
           <nav class="nav nav--topBar">
             <ul class="nav__list">
               <li class="nav__item">
-                <a data-goto=".page__section_1" href="#" class="nav__link">Про нас</a>
+                <a data-goto=".page__section_1" href="#" class="nav__link">Калькулятор</a>
               </li>
               <li class="nav__item">
-                <a data-goto=".page__section_2" href="#" class="nav__link">Калькулятор</a>
+                <a data-goto=".page__section_2" href="#" class="nav__link">Про нас</a>
               </li>
               <li class="nav__item">
                 <a data-goto=".page__section_3" href="#" class="nav__link">Чому ми?</a>
@@ -65,13 +68,13 @@
       <nav class="nav nav--sideBar">
         <ul class="nav__list nav--list-sideBar">
           <li class="nav__item">
-            <a data-goto=".page__section_1" href="#" class="nav__link">Про нас</a>
+            <a data-goto=".page__section_1" href="#" class="nav__link">Калькулятор</a>
           </li>
           <li class="nav__item">
-            <a data-goto=".page__section_2" href="#" class="nav__link">Чому ми?</a>
+            <a data-goto=".page__section_2" href="#" class="nav__link">Про нас</a>
           </li>
           <li class="nav__item">
-            <a data-goto=".page__section_3" href="#" class="nav__link">Калькулятор</a>
+            <a data-goto=".page__section_3" href="#" class="nav__link">Чому ми?</a>
           </li>
           <li class="nav__item">
             <a data-goto=".page__section_4" href="#" class="nav__link">Наші проекти</a>
@@ -107,60 +110,45 @@
                 <i class="social-icon icon-facebook"></i>
               </a>
             </li>
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=61556107972383">
+                <i class="social-icon icon-whatsapp"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=61556107972383">
+                <i class="social-icon icon-telegram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=61556107972383">
+                <i class="social-icon icon-viber"></i>
+              </a>
+            </li>
           </ul>
         </div>
 
         <div class="hero__container _container">
           <div class="hero__body">
             <div class="hero__top">
-              <h1 class="hero__title">Ремонт точно в термін!<br> За <span>60</span> днів із гарантією <span>2</span> роки
+              <h1 class="hero__title">Ремонт по доступній ціні!<br> За <span>60</span> днів із гарантією <span>2</span>
+                роки
               </h1>
-              <a data-goto=".page__section_2" class="hero__btn btn-11" href="#">Розрахувати вартість</a>
+              <a data-goto=".page__section_1" class="hero__btn btn-11" href="#">Розрахувати вартість</a>
             </div>
 
             <ul class="hero__privileges">
-              <li class="hero__privilege">Гарантія на всі роботи від 1 року</li>
-              <li class="hero__privilege">Доступні ціни та якісний ремонт</li>
-              <li class="hero__privilege">Фіксовані ціни та прозорий кошторис</li>
-              <li class="hero__privilege">Поетапна оплата</li>
-              <li class="hero__privilege">Закуповуємо чорнові матеріали безпосередньо у заводів</li>
+              <li class="hero__privilege pr-1">Гарантія на всі роботи від 1 року</li>
+              <li class="hero__privilege pr-2">Доступні та фіксовані ціни</li>
+              <li class="hero__privilege pr-3">Чесний кошторис</li>
+              <li class="hero__privilege pr-4">Поетапна оплата</li>
+              <li class="hero__privilege pr-5">Якісний ремонт та доступні ціни</li>
             </ul>
           </div>
         </div>
       </section>
 
-      <section class="about page__section_1">
-        <div class="about__container _container">
-          <div class="about__body">
-            <h2 class="about__title"><span>Про</span> нас</h2>
-            <div class="about__info-wrapper">
-              <div class="about_number">1</div>
-              <p class="about__text">Ласкаво запрошуємо в світ професійного ремонту та перетворень - світ, де кожен
-                проект оживає від майстерності та знань. Ми - команда Vremonti.ua, яка пройшла через випробування часу
-                та наростила вражаючий досвід протягом восьми років своєї діяльності. За цей час ми зробили 956 об'єктів
-                неперевершеними, подарувавши їм нове життя та блиск, що вразить кожного.</p>
-            </div>
-
-            <div class="about__info-wrapper">
-              <div class="about_number">2</div>
-              <p class="about__text">Наша команда - це не лише спеціалісти, але й справжні магістралі таланту та
-                професіоналізму. Кожен учасник нашої команди - це окрема майстерня ідей та вмінь, завжди готова взяти на
-                себе відповідальність за будь-яке завдання. Від миттєвих косметичних оновлень до складних та великих
-                проектів ремонту заміських будинків - ми впевнені в нашій здатності впоратися з будь-яким викликом.</p>
-            </div>
-
-            <div class="about__info-wrapper">
-              <div class="about_number">3</div>
-              <p class="about__text">Ми не просто виконуємо свою роботу - ми створюємо шедеври, що запам'ятовуються та
-                вражають своєю вишуканістю. Кожен проект - це наша візитна картка, наша гордість та наша спадщина. Ми -
-                команда Vremonti.ua, і ми завжди тут, щоб зробити ваші мрії про ідеальне приміщення реальністю. Довірте
-                нам свої ідеї - і ми перетворимо їх у дива!"</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="quiz page__section_2">
+      <section class="quiz page__section_1">
         <div class="quiz__container _container">
           <div class="quiz__body">
             <h3 class="quiz__title">Розрахуйте вартість вашого ремонту і закріпіть за собою подарунок на вибір</h3>
@@ -173,23 +161,23 @@
 
             <form action="javascript:" class="quiz__realty-form">
               <fieldset class="quiz__slide">
-                <h4 class="quiz__form-question">Виберіть тип нерухомості</h4>
+                <h4 class="quiz__form-question">Оберіть обʼєкт, в якому потрібен ремонт</h4>
                 <ul class="quiz__form-list">
                   <li class="quiz__form-item">
                     <label>
                       <div class="quiz__image">
-                        <img class="quiz__img" src="./image/quiz/01.jpeg" alt="image">
+                        <img class="quiz__img" src="./image/quiz/01.webp" alt="image">
                       </div>
                       <input type="radio" name="object" hidden value="Квартира">
                       <i class="quiz__radio"></i>
-                      <span class="quiz__form-answear">Квартира</span>
+                      <span class="quiz__form-answear">Квартира в новобудові</span>
                     </label>
                   </li>
 
                   <li class="quiz__form-item">
                     <label>
                       <div class="quiz__image">
-                        <img class="quiz__img" src="./image/quiz/02.jpeg" alt="image">
+                        <img class="quiz__img" src="./image/quiz/02.webp" alt="image">
                       </div>
                       <input type="radio" name="object" hidden value="Вторинне житло">
                       <i class="quiz__radio"></i>
@@ -211,7 +199,7 @@
                   <li class="quiz__form-item">
                     <label>
                       <div class="quiz__image">
-                        <img class="quiz__img" src="./image/quiz/04.jpg" alt="image">
+                        <img class="quiz__img" src="./image/quiz/04.webp" alt="image">
                       </div>
                       <input type="radio" name="object" hidden value="Комерційний об'єкт">
                       <i class="quiz__radio"></i>
@@ -358,28 +346,60 @@
           </form>
       </section>
 
+      <section class="about page__section_2">
+        <div class="about__container _container">
+          <div class="about__body">
+            <h2 class="about__title"><span>Про</span> нас</h2>
+            <div class="about__info-wrapper">
+              <div class="about_number">1</div>
+              <p class="about__text">Ласкаво запрошуємо в світ професійного ремонту та перетворень - світ, де кожен
+                проект оживає від майстерності та знань. Ми - команда Vremonti.ua, яка пройшла через випробування часу
+                та наростила вражаючий досвід протягом восьми років своєї діяльності. За цей час ми зробили 956 об'єктів
+                неперевершеними, подарувавши їм нове життя та блиск, що вразить кожного.</p>
+            </div>
+
+            <div class="about__info-wrapper">
+              <div class="about_number">2</div>
+              <p class="about__text">Наша команда - це не лише спеціалісти, але й справжні магістралі таланту та
+                професіоналізму. Кожен учасник нашої команди - це окрема майстерня ідей та вмінь, завжди готова взяти на
+                себе відповідальність за будь-яке завдання. Від миттєвих косметичних оновлень до складних та великих
+                проектів ремонту заміських будинків - ми впевнені в нашій здатності впоратися з будь-яким викликом.</p>
+            </div>
+
+            <div class="about__info-wrapper">
+              <div class="about_number">3</div>
+              <p class="about__text">Ми не просто виконуємо свою роботу - ми створюємо шедеври, що запам'ятовуються та
+                вражають своєю вишуканістю. Кожен проект - це наша візитна картка, наша гордість та наша спадщина. Ми -
+                команда Vremonti.ua, і ми завжди тут, щоб зробити ваші мрії про ідеальне приміщення реальністю. Довірте
+                нам свої ідеї - і ми перетворимо їх у дива!"</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="achievement">
         <div class="achievement__container _container">
           <div class="achievement__body">
             <h2 class="achievement__title"><span>Наші</span> досягнення</h2>
 
             <ul class="achievement__items">
-              <li class="achievement__item">
+              <li class="achievement__item" data-aos="flip-up">
                 <div class="achievement__number">8</div>
                 <p class="achievement__desscr">років на ринку</p>
               </li>
 
-              <li class="achievement__item">
+              <li class="achievement__item" data-aos="flip-up" data-aos-duration="800"
+              >
                 <div class="achievement__number">956</div>
                 <p class="achievement__desscr">реалізованих проектів</p>
               </li>
 
-              <li class="achievement__item">
+              <li class="achievement__item" data-aos="flip-up"  data-aos-duration="1600">
                 <div class="achievement__number">62</div>
                 <p class="achievement__desscr">співробітника у штаті</p>
               </li>
 
-              <li class="achievement__item">
+              <li class="achievement__item" data-aos="flip-up"  data-aos-duration="2400">
                 <div class="achievement__number">60</div>
                 <p class="achievement__desscr">днів у середньому за такий термін реалізовуємо об'єкт</p>
               </li>
@@ -515,7 +535,8 @@
                         </li>
                         <li class="gallery__img-item">Ремонт було виконано з 0 під 🔑
                         </li>
-                        <li class="gallery__img-item">Ремонтні роботи, виготовлення та встановлення меблів,технічне оснащення
+                        <li class="gallery__img-item">Ремонтні роботи, виготовлення та встановлення меблів,технічне
+                          оснащення
                         </li>
                         <li class="gallery__img-item">Термін виконання- 90 днів
                         </li>
@@ -554,15 +575,18 @@
                       <h5 class="gallery__img-name">VR032</h5>
                       <ul class="gallery__img-list">
                         <li class="gallery__img-item">ЖК Лебединий</li>
-                        <li class="gallery__img-item">1-к 42 кв. м. 
+                        <li class="gallery__img-item">1-к 42 кв. м.
                         </li>
                         <li class="gallery__img-item">Ремонт з 0 під ключ 🔑</li>
-                        <li class="gallery__img-item">Виготовлення та встановлення меблів 
+                        <li class="gallery__img-item">Виготовлення та встановлення меблів
                         <li class="gallery__img-item">Технічне оснащення
                         <li class="gallery__img-item">Термін - 90 днів
                         </li>
                       </ul>
-                      <p class="gallery__img-info">
+                      <p class="gallery__img-info">На цьому обʼєкті задача була відокремити зону відпочинку,тому
+                        прийняли рішення встановити скляну перегородку.Сам дизайн квартири виконано в улюбленому
+                        багатьма стилі-мінімалізмі.
+                        Красиво-не завжди дорого.
                       </p>
                     </div>
                   </a>
@@ -632,6 +656,44 @@
                 </div>
               </div>
 
+              <div class="swiper-slide">
+                <div class="gallery__project">
+                  <a class="gallery__image gallery__image-more-dark icon-arrow_right_icon-2" data-fancybox="project-5"
+                    href="./image/gallery/g5/01.jpg">
+                    <img alt="" src="./image/gallery/g5/01.jpg" style="display: block;">
+                    <div class="gallery__img-subtitle">
+                      <span class="gallery__img-date">09/2022</span>
+                      <h5 class="gallery__img-name">VR271</h5>
+                      <ul class="gallery__img-list">
+                        <li class="gallery__img-item">Комерційний обʼєкт 190 кв. м.
+                        </li>
+                        <li class="gallery__img-item">Ремонт виконували з 0 під 🔑
+                        </li>
+                        <li class="gallery__img-item">Термін виконання робіт- 3 місяці
+                        </li>
+                      </ul>
+                      <p class="gallery__img-info">Бажання замовника - зробити комфортні робочі місця для своїх
+                        працівник. Результат - світлий та гармонійний ремонт. Рішення встановити скляні напівпрозорі
+                        перегородки і тим самим відокремити кабінет - було правильним. Адже візуально тепер офіс
+                        виглядає більш просторим.
+                      </p>
+                    </div>
+                  </a>
+                  <a data-fancybox="project-5" href="./image/gallery/g5/02.jpg" class="gallery__image hide"><img
+                      src="./image/gallery/g5/02.jpg">
+                  </a>
+                  <a data-fancybox="project-5" href="./image/gallery/g5/03.jpg" class="gallery__image hide"><img
+                      src="./image/gallery/g5/03.jpg">
+                  </a>
+                  <a data-fancybox="project-5" href="./image/gallery/g5/04.jpg" class="gallery__image hide"><img
+                      src="./image/gallery/g5/04.jpg">
+                  </a>
+                  <a data-fancybox="project-5" href="./image/gallery/g5/05.jpg" class="gallery__image hide"><img
+                      src="./image/gallery/g5/05.jpg">
+                  </a>
+                </div>
+              </div>
+
 
             </div>
           </div>
@@ -660,12 +722,27 @@
                     <i class="footer-social social-icon icon-facebook"></i>
                   </a>
                 </li>
+                <li>
+                  <a href="https://www.facebook.com/profile.php?id=61556107972383">
+                    <i class="footer-social social-icon icon-whatsapp"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/profile.php?id=61556107972383">
+                    <i class="footer-social social-icon icon-telegram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/profile.php?id=61556107972383">
+                    <i class="footer-social social-icon icon-viber"></i>
+                  </a>
+                </li>
               </ul>
             </div>
 
             <div class="footer__column">
               <p class="footer__form-sub-title">Залишіть заявку і ми з вами зв'яжемось</p>
-              <form class="footer__form" action="javascript:">
+              <form class="footer__form" action="sendform.php">
                 <p>
                   <input class="footer__name" type="text" name="name" placeholder="Ім'я" required
                     pattern="^([a-zA-Z'\-]{1,50}|[а-яА-ЯёЁ'\-]{1,50}|[А-Яа-яёЁЇїІіЄєҐґ'\-]{1,50})$">
@@ -687,7 +764,7 @@
                   <a href="tel:+380978952980" class="footer__number icon-phone">+38 (097) 895 29 80</a>
                 </li>
                 <li class="footer__item">
-                  <a href="mailto:Petrenko-alina@ukr.net" class="footer__mail icon-email">Petrenko-alina@ukr.net</a>
+                  <a href="mailto:vremonti.ua@gmail.com" class="footer__mail icon-email">vremonti.ua@gmail.com</a>
                 </li>
               </ul>
             </div>
@@ -700,6 +777,10 @@
       </div>
     </footer>
   </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 </body>

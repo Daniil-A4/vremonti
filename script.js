@@ -218,7 +218,7 @@ if (menuLinks.length > 0) {
     const menuLink = e.target
     if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
       const gotoBlock = document.querySelector(menuLink.dataset.goto)
-      const gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollY - document.querySelector('.header').offsetHeight + 70
+      const gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollY - document.querySelector('.header').offsetHeight + 80
 
       window.scrollTo({
         // top: gotoBlock.offsetTop,
